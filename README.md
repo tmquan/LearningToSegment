@@ -1,1 +1,1 @@
-# LearnToSegment
+# LearningToSegment

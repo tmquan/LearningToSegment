@@ -63,16 +63,22 @@ if __name__ == '__main__':
     
     # Choose the GPU
     if args.gpu:
-       os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
+        os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
         
     if args.sample:
-        sample()	
+        sample()    
     else
-    	 #
-    	 # Train from scratch or load the pretrained network
-    	 #
-    	 # Initialize the program
-	    writer = SummaryWriter()
-	    use_cuda = torch.cuda.is_available()
-	    step = 0
+        #
+        # Train from scratch or load the pretrained network
+        #
+        # Initialize the program
+        writer = SummaryWriter()
+        use_cuda = torch.cuda.is_available()
+        step = 0
+        
+        # TODO: Callbacks
+        # Save the model
+        # Log the loss
+        # Log the image to tensorboard
+
 ```
